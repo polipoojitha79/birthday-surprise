@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Birthday Surprise ❤️</title>
+
+<style>
+
+body{
+background:linear-gradient(#ffd1dc,#fff);
+font-family:Arial;
+text-align:center;
+}
+
+.box{
+
+margin:50px auto;
+background:white;
+width:80%;
+padding:30px;
+border-radius:25px;
+box-shadow:0 0 20px pink;
+
+}
+
+h1{
+color:#ff4081;
+}
+
+button{
+
+background:#ff4081;
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+font-size:20px;
+
+}
+
+.page{
+display:none;
+}
+
+img{
+
+width:250px;
+height:250px;
+border-radius:20px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+
+<div class="page" id="p1" style="display:block">
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2>Ammulu ❤️</h2>
+
+<p>Welcome to your surprise 😊</p>
+
+<button onclick="nextPage(2)">
+Click Here 🎁
+</button>
+
+</div>
+
+
+
+
+<div class="page" id="p2">
+
+<h1>💖 Surprise 1 💖</h1>
+
+<p>You are a very special person ❤️</p>
+
+<button onclick="nextPage(3)">
+Click Here 🎀
+</button>
+
+</div>
+
+
+
+
+<div class="page" id="p3">
+
+<h1>📸 Memory Time</h1>
+
+<img src="photo.jpg">
+
+<p>Beautiful memories ✨</p>
+
+<button onclick="nextPage(4)">
+Next 🎈
+</button>
+
+</div>
+
+
+
+
+<div class="page" id="p4">
+
+<h1>🎈 Balloon Surprise 🎈</h1>
+
+<h1>🎈🎈🎈🎈</h1>
+
+<p>Keep smiling always 😊</p>
+
+<button onclick="nextPage(5)">
+Next ❤️
+</button>
+
+</div>
+
+
+
+
+<div class="page" id="p5">
+
+<h1>✨ Special Wishes ✨</h1>
+
+<p>
+May your life be filled with happiness 🌟
+</p>
+
+<p>
+May all your dreams come true ❤️
+</p>
+
+<button onclick="nextPage(6)">
+Final Surprise 🎁
+</button>
+
+</div>
+
+
+
+
+<div class="page" id="p6">
+
+<h1>💖 Happy Birthday Ammulu 💖</h1>
+
+<h2>❤️❤️❤️</h2>
+
+<p>
+Thank you for being special 😊
+</p>
+
+<p>
+Have a beautiful day 🎂✨
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script>
+
+function nextPage(num){
+
+document.querySelectorAll(".page").forEach(function(page){
+
+page.style.display="none";
+
+});
+
+
+document.getElementById("p"+num).style.display="block";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
